@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="15e35489-11ad-46f2-a389-0ca7743a6d03" name="更改" comment="Init Project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/CheckinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/QueueStatusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/ReservationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/WeatherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/CheckinRecordDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ReservationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ScenicSpotDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/WeatherInfoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/CheckinRecordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/ReservationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/ScenicSpotDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/WeatherInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/CheckinRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/ScenicSpot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/WeatherInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/CheckinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/QueueStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/WeatherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/confirmation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/queue_status.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/reservation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/scenic_spots.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/weather_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/HelloServlet.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;orbstack&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="orbstack" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2giy5p4WcP7RMDZ4JeXjdAOYajI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.构建 TourServicePlatform.executor&quot;: &quot;Run&quot;,
+    &quot;JBoss/WildFly 服务器.JBoss/WildFly 31.0.1.Final.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="JBoss/WildFly 31.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 31.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : me.kinaz : TourServicePlatform-1.0-SNAPSHOT.war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="main-server-group" />
+        <option name="USERNAME" value="" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52558" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : me.kinaz : TourServicePlatform-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="15e35489-11ad-46f2-a389-0ca7743a6d03" name="更改" comment="" />
+      <created>1716194511923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716194511923</updated>
+      <workItem from="1716194512988" duration="1000" />
+      <workItem from="1716878618071" duration="2734000" />
+      <workItem from="1716883542268" duration="3098000" />
+      <workItem from="1716886646080" duration="1480000" />
+      <workItem from="1716898294330" duration="896000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init Project">
+      <option name="closed" value="true" />
+      <created>1716195419395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716195419395</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Project" />
+  </component>
+</project>
