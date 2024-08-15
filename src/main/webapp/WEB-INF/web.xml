@@ -1,6 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
-         version="5.0">
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>TourServicePlatform</display-name>
+
+    <!-- Servlet Definitions -->
+    <servlet>
+        <servlet-name>UserController</servlet-name>
+        <servlet-class>me.kinaz.tourserviceplatform.controller.UserController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserController</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReservationController</servlet-name>
+        <servlet-class>me.kinaz.tourserviceplatform.controller.ReservationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReservationController</servlet-name>
+        <url-pattern>/reservations</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckinController</servlet-name>
+        <servlet-class>me.kinaz.tourserviceplatform.controller.CheckinController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckinController</servlet-name>
+        <url-pattern>/checkin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>QueueStatusController</servlet-name>
+        <servlet-class>me.kinaz.tourserviceplatform.controller.QueueStatusController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QueueStatusController</servlet-name>
+        <url-pattern>/queue_status</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WeatherController</servlet-name>
+        <servlet-class>me.kinaz.tourserviceplatform.controller.WeatherController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WeatherController</servlet-name>
+        <url-pattern>/weather</url-pattern>
+    </servlet-mapping>
+
+    <!-- JMS Resources -->
+    <resource-ref>
+        <res-ref-name>jms/queue/TicketQueue</res-ref-name>
+        <res-type>jakarta.jms.Queue</res-type>
+        <lookup-name>java:/jms/queue/TicketQueue</lookup-name>
+    </resource-ref>
+
+    <!-- Welcome file list -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
 </web-app>

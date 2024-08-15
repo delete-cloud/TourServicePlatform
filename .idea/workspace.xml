@@ -4,44 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e35489-11ad-46f2-a389-0ca7743a6d03" name="更改" comment="Init Project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/CheckinController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/QueueStatusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/ReservationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/WeatherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/CheckinRecordDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ReservationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ScenicSpotDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/WeatherInfoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/CheckinRecordDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/ReservationDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/ScenicSpotDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/WeatherInfoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/CheckinRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/Reservation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/ScenicSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/WeatherInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/CheckinService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/QueueStatusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ReservationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/WeatherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/checkin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/confirmation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/queue_status.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/reservation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/scenic_spots.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weather_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="15e35489-11ad-46f2-a389-0ca7743a6d03" name="更改" comment="Finish base function structure">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/initialize_tourserviceplatform.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/conf/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/conf/PersistenceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/AddTicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/ScenicSpotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/QueueStatusDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ServiceStationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/TicketDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/TrafficInfoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/QueueStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/ServiceStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/rest/RestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/rest/WeatherServiceResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ReservationSessionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ScenicSpotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ServiceStationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/TrafficClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/TrafficService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/jms/TicketProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/mdb/TicketMDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/util/LoggerProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/add_ticket.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/homepage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/reservations.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/transport_routes.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/使用说明.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/CheckinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/CheckinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/QueueStatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/QueueStatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/ReservationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/ReservationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/controller/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/CheckinRecordDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/CheckinRecordDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ReservationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ReservationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ScenicSpotDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/ScenicSpotDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/WeatherInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dao/WeatherInfoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/ReservationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/ReservationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/WeatherInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/dto/WeatherInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/CheckinRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/CheckinRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/ScenicSpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/ScenicSpot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/WeatherInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/entity/WeatherInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/QueueStatusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/QueueStatusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/ReservationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kinaz/tourserviceplatform/service/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/checkin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/confirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/confirmation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/queue_status.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/queue_status.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/reservation.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/scenic_spots.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/scenic_spots.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weather_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/weather_info.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +83,63 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TourServicePlatform" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TourServicePlatform" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TourServicePlatform" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
+        <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;delete-cloud&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0256de26-88b3-4ff7-87fa-2be496231909" />
+        <option name="url" value="git@github.com:delete-cloud/TourServicePlatform.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="KubernetesApiProvider">{
   &quot;contexts&quot;: [
@@ -75,6 +151,9 @@
 }</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="orbstack" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -89,20 +168,48 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.TourServicePlatform [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.构建 TourServicePlatform.executor&quot;: &quot;Run&quot;,
     &quot;JBoss/WildFly 服务器.JBoss/WildFly 31.0.1.Final.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;问题&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JBoss/WildFly 服务器.JBoss/WildFly 31.0.1.Final">
+    <configuration name="TourServicePlatform [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="JBoss/WildFly 31.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 31.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -155,10 +262,10 @@
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
+          <option name="USE_DEFAULT" value="false" />
+          <option name="SCRIPT" value="$USER_HOME$/Tools/wildfly-31.0.1.Final/bin/standalone.sh" />
           <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="-c standalone-full.xml " />
         </STARTUP>
         <SHUTDOWN>
           <option name="USE_DEFAULT" value="true" />
@@ -174,6 +281,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TourServicePlatform [clean]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -187,7 +299,25 @@
       <workItem from="1716878618071" duration="2734000" />
       <workItem from="1716883542268" duration="3098000" />
       <workItem from="1716886646080" duration="1480000" />
-      <workItem from="1716898294330" duration="896000" />
+      <workItem from="1716898294330" duration="1138000" />
+      <workItem from="1717027681173" duration="93000" />
+      <workItem from="1717405329737" duration="730000" />
+      <workItem from="1717462631851" duration="2864000" />
+      <workItem from="1717481471896" duration="6718000" />
+      <workItem from="1717499869736" duration="4621000" />
+      <workItem from="1717638044285" duration="484000" />
+      <workItem from="1717638538066" duration="2324000" />
+      <workItem from="1717658540853" duration="4847000" />
+      <workItem from="1717719748281" duration="7511000" />
+      <workItem from="1717743454739" duration="14240000" />
+      <workItem from="1717808416099" duration="4708000" />
+      <workItem from="1717814298567" duration="2190000" />
+      <workItem from="1717829249873" duration="7900000" />
+      <workItem from="1717893408622" duration="23281000" />
+      <workItem from="1717919682943" duration="10943000" />
+      <workItem from="1718064126766" duration="1110000" />
+      <workItem from="1718066888961" duration="780000" />
+      <workItem from="1718845385675" duration="2053000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <option name="closed" value="true" />
@@ -197,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716195419395</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finish base function structure">
+      <option name="closed" value="true" />
+      <created>1716899322178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716899322179</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +343,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Project" />
+    <MESSAGE value="Finish base function structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish base function structure" />
   </component>
 </project>

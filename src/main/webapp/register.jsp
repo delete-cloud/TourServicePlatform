@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <h2>Register</h2>
@@ -11,6 +12,8 @@
     Email: <input type="email" name="email" required><br>
     <input type="submit" value="Register">
 </form>
+
+<a href="login.jsp">Login</a>
 </body>
 </html>
 

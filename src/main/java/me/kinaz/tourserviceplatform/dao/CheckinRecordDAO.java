@@ -1,16 +1,16 @@
 package me.kinaz.tourserviceplatform.dao;
 
-import me.kinaz.tourserviceplatform.entity.CheckinRecord;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
+import me.kinaz.tourserviceplatform.entity.CheckinRecord;
+
 import java.util.List;
 
 @Stateless
 public class CheckinRecordDAO {
-    @PersistenceContext
+    @Inject
     private EntityManager em;
-
     public void createCheckinRecord(CheckinRecord checkinRecord) {
         em.persist(checkinRecord);
     }

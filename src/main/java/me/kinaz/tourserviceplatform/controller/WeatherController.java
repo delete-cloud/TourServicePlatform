@@ -16,7 +16,22 @@ public class WeatherController extends HttpServlet {
     private WeatherService weatherService;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Long scenicSpotId = Long.parseLong(request.getParameter("scenicSpotId"));
+        String scenicSpotIdParam = request.getParameter("scenicSpotId");
+        if (scenicSpotIdParam == null || scenicSpotIdParam.isEmpty()) {
+            request.setAttribute("errorMessage", "Missing or empty scenicSpotId parameter");
+            request.getRequestDispatcher("weather_info.jsp").forward(request, response);
+            return;
+        }
+
+        Long scenicSpotId;
+        try {
+            scenicSpotId = Long.parseLong(scenicSpotIdParam);
+        } catch (NumberFormatException e) {
+            request.setAttribute("errorMessage", "Invalid scenicSpotId parameter");
+            request.getRequestDispatcher("weather_info.jsp").forward(request, response);
+            return;
+        }
+
         WeatherInfoDTO weatherInfo = weatherService.getWeatherInfo(scenicSpotId);
         request.setAttribute("weatherInfo", weatherInfo);
         request.getRequestDispatcher("weather_info.jsp").forward(request, response);

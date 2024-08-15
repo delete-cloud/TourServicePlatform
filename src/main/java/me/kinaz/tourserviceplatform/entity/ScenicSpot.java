@@ -2,6 +2,8 @@ package me.kinaz.tourserviceplatform.entity;
 
 import jakarta.persistence.*;
 
+import java.util.Objects;
+
 @Entity
 @Table(name = "scenic_spots")
 public class ScenicSpot {
@@ -15,8 +17,14 @@ public class ScenicSpot {
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "image_url")
     private String imageUrl;
+
+    public ScenicSpot() {
+    }
+    public ScenicSpot(Long scenicSpotId) {
+        this.id = scenicSpotId;
+    }
 
     // Getters and Setters
 
@@ -50,5 +58,18 @@ public class ScenicSpot {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ScenicSpot that = (ScenicSpot) o;
+        return Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

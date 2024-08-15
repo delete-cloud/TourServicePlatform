@@ -2,6 +2,8 @@ package me.kinaz.tourserviceplatform.entity;
 
 import jakarta.persistence.*;
 
+import java.sql.Timestamp;
+
 @Entity
 @Table(name = "reservations")
 public class Reservation {
@@ -17,8 +19,8 @@ public class Reservation {
     @JoinColumn(name = "scenic_spot_id", nullable = false)
     private ScenicSpot scenicSpot;
 
-    @Column(nullable = false)
-    private String visitTime;
+    @Column(name = "reservation_time", nullable = false)
+    private Timestamp reservationTime;
 
     // Getters and Setters
 
@@ -46,11 +48,11 @@ public class Reservation {
         this.scenicSpot = scenicSpot;
     }
 
-    public String getVisitTime() {
-        return visitTime;
+    public Timestamp getReservationTime() {
+        return reservationTime;
     }
 
-    public void setVisitTime(String visitTime) {
-        this.visitTime = visitTime;
+    public void setReservationTime(Timestamp reservationTime) {
+        this.reservationTime = reservationTime;
     }
 }

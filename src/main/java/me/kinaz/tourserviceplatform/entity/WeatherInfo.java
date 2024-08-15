@@ -9,13 +9,13 @@ public class WeatherInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "scenic_spot_id")
     private Long scenicSpotId;
 
     @Column(nullable = false)
     private String temperature;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "weather_condition")
     private String condition;
 
     // Getters and Setters

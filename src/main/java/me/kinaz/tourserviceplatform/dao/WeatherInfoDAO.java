@@ -1,13 +1,13 @@
 package me.kinaz.tourserviceplatform.dao;
 
-import me.kinaz.tourserviceplatform.entity.WeatherInfo;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
+import me.kinaz.tourserviceplatform.entity.WeatherInfo;
 
 @Stateless
 public class WeatherInfoDAO {
-    @PersistenceContext
+    @Inject
     private EntityManager em;
 
     public void createWeatherInfo(WeatherInfo weatherInfo) {

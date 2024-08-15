@@ -1,16 +1,20 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Scenic Spots</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <h2>Scenic Spots</h2>
-<c:forEach var="spot" items="${scenicSpots}">
+<c:forEach var="scenicSpot" items="${scenicSpots}">
     <div>
-        <h3>${spot.name}</h3>
-        <p>${spot.description}</p>
-        <img src="${spot.imageUrl}" alt="${spot.name}" width="200"><br>
-        <a href="reserve?scenicSpotId=${spot.id}">Reserve</a>
+        <h3>${scenicSpot.name}</h3>
+        <p>${scenicSpot.description}</p>
+        <img src="${scenicSpot.imageUrl}" alt="${scenicSpot.name}" width="200">
+        <br>
+        <a href="weather?scenicSpotId=${scenicSpot.id}">View Weather Info</a>
     </div>
 </c:forEach>
 </body>

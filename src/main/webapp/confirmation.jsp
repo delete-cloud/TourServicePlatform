@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Reservation Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <h2>Reservation Confirmation</h2>

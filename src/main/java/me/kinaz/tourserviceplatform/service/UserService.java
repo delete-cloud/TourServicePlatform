@@ -18,7 +18,7 @@ public class UserService {
     public void registerUser(UserDTO userDTO) {
         User user = new User();
         user.setUsername(userDTO.getUsername());
-        user.setPassword(encryptPassword(userDTO.getPassword())); // Assume this method exists
+        user.setPassword(encryptPassword(userDTO.getPassword()));
         user.setEmail(userDTO.getEmail());
         userDAO.createUser(user);
     }
@@ -35,7 +35,7 @@ public class UserService {
         return userDTO;
     }
 
-    private String encryptPassword(String password) {
+    public String encryptPassword(String password) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             byte[] hash = md.digest(password.getBytes(StandardCharsets.UTF_8));

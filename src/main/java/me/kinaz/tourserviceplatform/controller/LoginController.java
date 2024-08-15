@@ -13,7 +13,7 @@ import me.kinaz.tourserviceplatform.service.UserService;
 import me.kinaz.tourserviceplatform.entity.User;
 
 @WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+public class LoginController extends HttpServlet {
 
     @Inject
     private UserService userService;

@@ -11,8 +11,8 @@ import jakarta.inject.Inject;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/scenicSpots")
-public class ScenicSpotServlet extends HttpServlet {
+@WebServlet("/scenic_spots")
+public class ScenicSpotController extends HttpServlet {
     @Inject
     private ScenicSpotDAO scenicSpotDAO;
 
@@ -20,6 +20,6 @@ public class ScenicSpotServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<ScenicSpot> scenicSpots = scenicSpotDAO.findAllScenicSpots();
         request.setAttribute("scenicSpots", scenicSpots);
-        request.getRequestDispatcher("scenicSpots.jsp").forward(request, response);
+        request.getRequestDispatcher("scenic_spots.jsp").forward(request, response);
     }
 }

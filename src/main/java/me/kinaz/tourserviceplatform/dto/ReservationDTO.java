@@ -1,20 +1,15 @@
 package me.kinaz.tourserviceplatform.dto;
 
+import java.sql.Timestamp;
+
 public class ReservationDTO {
     private Long id;
     private Long userId;
     private Long scenicSpotId;
-    private String visitTime;
-
-    public ReservationDTO() {
-    }
-
-    public ReservationDTO(Long id, Long userId, Long scenicSpotId, String visitTime) {
-        this.id = id;
-        this.userId = userId;
-        this.scenicSpotId = scenicSpotId;
-        this.visitTime = visitTime;
-    }
+    private Timestamp reservationTime;
+    private String scenicSpotName;
+    private String scenicSpotDescription;
+    private String scenicSpotImageUrl;
 
     // Getters and Setters
 
@@ -42,11 +37,35 @@ public class ReservationDTO {
         this.scenicSpotId = scenicSpotId;
     }
 
-    public String getVisitTime() {
-        return visitTime;
+    public Timestamp getReservationTime() {
+        return reservationTime;
     }
 
-    public void setVisitTime(String visitTime) {
-        this.visitTime = visitTime;
+    public void setReservationTime(Timestamp reservationTime) {
+        this.reservationTime = reservationTime;
+    }
+
+    public String getScenicSpotName() {
+        return scenicSpotName;
+    }
+
+    public void setScenicSpotName(String scenicSpotName) {
+        this.scenicSpotName = scenicSpotName;
+    }
+
+    public String getScenicSpotDescription() {
+        return scenicSpotDescription;
+    }
+
+    public void setScenicSpotDescription(String scenicSpotDescription) {
+        this.scenicSpotDescription = scenicSpotDescription;
+    }
+
+    public String getScenicSpotImageUrl() {
+        return scenicSpotImageUrl;
+    }
+
+    public void setScenicSpotImageUrl(String scenicSpotImageUrl) {
+        this.scenicSpotImageUrl = scenicSpotImageUrl;
     }
 }

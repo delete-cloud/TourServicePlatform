@@ -10,10 +10,10 @@ public class CheckinRecord {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "ticket_code")
     private String ticketCode;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "checkin_time")
     private Date checkinTime;
 
     // Getters and Setters

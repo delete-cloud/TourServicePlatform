@@ -3,33 +3,42 @@ package me.kinaz.tourserviceplatform.dao;
 import me.kinaz.tourserviceplatform.entity.Reservation;
 import me.kinaz.tourserviceplatform.entity.User;
 import me.kinaz.tourserviceplatform.entity.ScenicSpot;
-import jakarta.ejb.Stateless;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import jakarta.transaction.Transactional;
 import java.util.List;
 
-@Stateless
+@ApplicationScoped
 public class ReservationDAO {
-    @PersistenceContext
-    private EntityManager em;
 
+    @PersistenceContext
+    private EntityManager entityManager;
+
+    @Transactional
     public void createReservation(Reservation reservation) {
-        em.persist(reservation);
+        entityManager.persist(reservation);
+    }
+
+    @Transactional
+    public void updateReservation(Reservation reservation) {
+        entityManager.merge(reservation);
     }
 
     public List<Reservation> findReservationsByUser(User user) {
-        return em.createQuery("SELECT r FROM Reservation r WHERE r.user = :user", Reservation.class)
+        return entityManager.createQuery("SELECT r FROM Reservation r WHERE r.user = :user", Reservation.class)
                 .setParameter("user", user)
                 .getResultList();
     }
 
-    public List<Reservation> findReservationsByScenicSpot(ScenicSpot scenicSpot) {
-        return em.createQuery("SELECT r FROM Reservation r WHERE r.scenicSpot = :scenicSpot", Reservation.class)
-                .setParameter("scenicSpot", scenicSpot)
-                .getResultList();
-    }
-
-    public Reservation findReservationById(Long id) {
-        return em.find(Reservation.class, id);
+    public Reservation findReservationByUserAndScenicSpot(User user, ScenicSpot scenicSpot) {
+        try {
+            return entityManager.createQuery("SELECT r FROM Reservation r WHERE r.user.id = :userId AND r.scenicSpot.id = :scenicSpotId", Reservation.class)
+                    .setParameter("userId", user.getId())
+                    .setParameter("scenicSpotId", scenicSpot.getId())
+                    .getSingleResult();
+        } catch (Exception e) {
+            return null;
+        }
     }
 }

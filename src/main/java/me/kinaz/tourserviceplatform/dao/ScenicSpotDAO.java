@@ -9,13 +9,13 @@ import java.util.List;
 @Stateless
 public class ScenicSpotDAO {
     @PersistenceContext
-    private EntityManager em;
+    private EntityManager entityManager;
 
-    public List<ScenicSpot> getAllScenicSpots() {
-        return em.createQuery("SELECT s FROM ScenicSpot s", ScenicSpot.class).getResultList();
+    public List<ScenicSpot> findAllScenicSpots() {
+        return entityManager.createQuery("SELECT s FROM ScenicSpot s", ScenicSpot.class).getResultList();
     }
 
-    public ScenicSpot findScenicSpotById(Long id) {
-        return em.find(ScenicSpot.class, id);
+    public ScenicSpot findById(Long id) {
+        return entityManager.find(ScenicSpot.class, id);
     }
 }

@@ -1,14 +1,14 @@
 package me.kinaz.tourserviceplatform.dao;
 
-import me.kinaz.tourserviceplatform.entity.User;
 import jakarta.ejb.Stateless;
+import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.NoResultException;
+import me.kinaz.tourserviceplatform.entity.User;
 
 @Stateless
 public class UserDAO {
-    @PersistenceContext
+    @Inject
     private EntityManager em;
 
     public void createUser(User user) {
